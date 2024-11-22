@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>APCS Autograder</title>
+</head>
+<body>
+    <h1>APCS Autograder</h1>
+    <form id='form'>
+        <label for='labs'>Choose a lab:</label>
+        <select id="labs" name = "labs" required>
+            <option value="" disabled>Choose a lab</option>
+        </select>
+
+        <label for='doc'>Choose files to upload:</label>
+        <input type='file' name='doc' id='doc' required multiple/>
+        <button type='submit'>Upload</button>
+    </form>
+    <div id="output"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
